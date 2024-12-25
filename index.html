@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobify360 - Hero Section Redesign</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-image: url('https://jobify360.co.il/images/sivan7538_A_vibrant_futuristic_workplace_where_tech-savvy_in-3.jpg'); /* Replace with your new hero background image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Darker overlay for better text contrast */
+    }
+
+    .hero-content {
+      position: relative;
+      text-align: center;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      display: inline-block;
+      color: #fff;
+    }
+
+    .hero-title .typing {
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      border-right: 2px solid #fff;
+      font-size: 3rem;
+      font-weight: 700;
+      animation: typing 4s steps(30) 1, erasing 2s steps(30) 4s 1;
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes erasing {
+      from {
+        width: 100%;
+      }
+      to {
+        width: 0;
+      }
+    }
+
+    .hero-description {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button {
+      background-color: #007bff;
+      color: #fff;
+      font-size: 1.1rem;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    .partners {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 30px;
+    }
+
+    .partner-logo img {
+      max-height: 50px;
+      object-fit: contain;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-title .typing {
+        font-size: 2rem;
+      }
+
+      .hero-description {
+        font-size: 1rem;
+        max-width: 90%;
+      }
+
+      .cta-button {
+        font-size: 1rem;
+      }
+
+      .partners {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .partner-logo img {
+        max-height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="typing">You have a lot more options than you thought</span>
+      </h1>
+      <p class="hero-description">
+        Jobify is an AI-based system that will help you find a job that matches your skills and experience. The use of the system is free and unlimited.
+      </p>
+      <a href="#get-started" class="cta-button">I want to begin</a>
+      <div class="partners">
+        <div class="partner-logo">
+          <img src="https://jobify360.co.il/images/mianLogo.png" alt="Partner 1">
+        </div>
+        <div class="partner-logo">
+          <img src="https://jobify360.co.il/images/logo2.png" alt="Partner 2">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
